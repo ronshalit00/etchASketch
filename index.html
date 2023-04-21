@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Etch a Sketch</title>
+	</head>
+	<body>
+		<h1>Etch a sketch</h1>
+		<main>
+			<div id="mode-selector">Mode: <span class="mode">Coloring</span></div>
+			<div id="container"></div>
+			<div id="colors">
+				<button id="black" onclick="changeColor('black')">Black</button>
+				<button id="green" onclick="changeColor('green')">Green</button>
+				<button id="blue" onclick="changeColor('blue')">Blue</button>
+				<button id="random" onclick="changeColor('random')">Rainbow</button>
+				<button id="white" onclick="changeColor('white')">Eraser</button>
+				<button id="reset" onclick="resetBoard()">Reset</button>
+			</div>
+			<div>
+				<input
+					type="text"
+					placeholder="Board size"
+					value="16"
+					onchange="changeSize(this.value)"
+				/>
+				<button>Set size</button>
+			</div>
+		</main>
+	</body>
+	<script src="app.js"></script>
+</html>

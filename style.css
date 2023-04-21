@@ -1,0 +1,103 @@
+:root {
+	--rainbow: linear-gradient(
+		90deg,
+		rgba(255, 0, 0, 1) 0%,
+		rgba(255, 154, 0, 1) 10%,
+		rgba(208, 222, 33, 1) 20%,
+		rgba(79, 220, 74, 1) 30%,
+		rgba(63, 218, 216, 1) 40%,
+		rgba(47, 201, 226, 1) 50%,
+		rgba(28, 127, 238, 1) 60%,
+		rgba(95, 21, 242, 1) 70%,
+		rgba(186, 12, 248, 1) 80%,
+		rgba(251, 7, 217, 1) 90%,
+		rgba(255, 0, 0, 1) 100%
+	);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Courier New", Courier, monospace;
+	background-color: #e70d0b;
+}
+
+h1 {
+	color: #ffff00;
+	text-align: center;
+	font-size: 3rem;
+	font-family: fantasy;
+}
+
+#container {
+	display: grid;
+	width: 600px;
+	height: 600px;
+	border: 2px solid black;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+#mode-selector {
+	font-size: 1.1rem;
+}
+
+.mode {
+	color: blue;
+}
+
+button,
+input {
+	border-radius: 8px;
+	padding: 7px 10px;
+}
+
+button {
+	border: 1px solid black;
+	cursor: pointer;
+	font-size: 1.2rem;
+}
+
+#colors button {
+	min-width: 60px;
+	font-weight: 700;
+	color: white;
+}
+
+#black {
+	background-color: black;
+}
+
+#green {
+	background-color: green;
+}
+
+#blue {
+	background-color: blue;
+}
+
+#random {
+	background: var(--rainbow);
+}
+
+#white {
+	background-color: white;
+	color: black !important;
+}
+
+#reset {
+	color: black !important;
+	background-color: lightgray;
+}
+
+input {
+	max-width: 110px;
+	font-size: 1.1rem;
+}
