@@ -22,6 +22,7 @@
 body {
 	font-family: "Courier New", Courier, monospace;
 	background-color: #e70d0b;
+	margin: 0;
 }
 
 h1 {
@@ -100,4 +101,23 @@ button {
 input {
 	max-width: 110px;
 	font-size: 1.1rem;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: white;
+}
+
+footer a {
+	color: orangered;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+	color: rgb(0, 101, 67);
 }
